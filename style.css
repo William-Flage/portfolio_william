@@ -8,13 +8,16 @@ Color Scheme
 #DFE0E2 Platinum
 
 */
+style {
 
-body {
+    body {
     font-family: arial, sans-serif;
     font-size: 1.1em;
 }
 
-h1 {
+    h1 {
     text-align: center;
     font-size: 1.8em;
+}
+
 }
