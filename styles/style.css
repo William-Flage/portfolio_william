@@ -9,12 +9,17 @@ Color Scheme
 
 */
 body {
-    font-family: arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.1em;
     background-color: #284b63;
 }
 
+h1,h2,h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
+    
     text-align: center;
     font-size: 1.8em;
     color: #cba135;
