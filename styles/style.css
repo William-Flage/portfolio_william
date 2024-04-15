@@ -56,3 +56,27 @@ table {
   text-align: center;
   background-color: #353535;
 }
+
+#skip {
+    width: 10em;
+
+}
+
+#info {
+    width: 40%;
+    font-size: 1.4em;
+}
+
+#overview {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#temp {
+    font-style: italic;
+}
+
+#main {
+    background-color: #353535;
+    color: #dfe0e2;
+}
