@@ -48,7 +48,6 @@ p {
 
 li {
     color: #dfe0e2;
-  padding: 5px;
 }
 
 table {
@@ -59,6 +58,7 @@ table {
 
 #skip {
     width: 10em;
+    text-align: center;
 
 }
 
@@ -72,11 +72,24 @@ table {
     font-size: 1.2em;
 }
 
+#overview::first-letter {
+    font-size: 1.4em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 #temp {
     font-style: italic;
 }
 
 #main {
     background-color: #353535;
+    color: #dfe0e2;
+}
+
+a {
+    color: #cba135;
+}
+
+a:hover {
     color: #dfe0e2;
 }
