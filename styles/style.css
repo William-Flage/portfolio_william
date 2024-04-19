@@ -56,15 +56,21 @@ table {
   background-color: #353535;
 }
 
-#skip {
-    width: 10em;
-    text-align: center;
-
-}
+div#skip {
+    top: 5px;
+    left: 5px;
+    position: relative;
+    right: 12.5%;
+    }
 
 #info {
     width: 40%;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    float: left;
+}
+
+nav {
+    clear: left;
 }
 
 #overview {
