@@ -80,6 +80,29 @@ div#skip {
     float: left;
 }
 
+#overview {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#overview::first-letter {
+    font-size: 1.4em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#temp {
+    font-style: italic;
+}
+
+#main {
+    background-color: #353535;
+    color: #dfe0e2;
+}
+
+
+
+/* Navigation Menu Styles */
+
 nav {
     clear: left;
 }
@@ -108,25 +131,6 @@ nav ul li a:hover, nav ul li a:focus {
         color: black;
         background-color: white;
         font-weight: bold;
-}
-
-#overview {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-#overview::first-letter {
-    font-size: 1.4em;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#temp {
-    font-style: italic;
-}
-
-#main {
-    background-color: #353535;
-    color: #dfe0e2;
 }
 
 a {
