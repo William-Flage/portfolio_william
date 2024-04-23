@@ -99,7 +99,22 @@ div#skip {
     color: #dfe0e2;
 }
 
+/* Table Styles */
 
+table {
+  text-align: center;
+}
+
+caption {
+  font-size: 1.6em;
+  color: #cba135;
+  font-weight: bold;
+}
+
+thead {
+  font-size: 1.2em;
+  
+}
 
 /* Navigation Menu Styles */
 
