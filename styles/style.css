@@ -8,10 +8,21 @@ Color Scheme
 #DFE0E2 Platinum
 
 */
+
+main {
+    clear:left;
+}
+
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.1em;
     background-color: #284b63;
+    width: 70%;
+    margin: 0 auto; /* horizontal center */
+    border: thick solid black;
+    padding: 1em;
+    min-width: 720px;
+
 }
 
 h1,h2,h3 {
@@ -27,7 +38,7 @@ h1 {
 }
 
 div {
-    text-align: center;
+    text-align: left;
     color: #284b63;
     
 }
@@ -71,6 +82,32 @@ div#skip {
 
 nav {
     clear: left;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 0.5em;
+}
+
+nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    background-color: #EBF5FF; /* pale bluish white */
+    color: #4312AE; /* dark blue */
+    border: 2px solid black;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; /* another rounded corner! */
+}
+
+
+nav ul li a:hover, nav ul li a:focus {
+        color: black;
+        background-color: white;
+        font-weight: bold;
 }
 
 #overview {
