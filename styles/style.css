@@ -105,6 +105,7 @@ button {
     color: #4312AE;
     border: 2px solid black;
     box-shadow: 4px 4px 4px #999999;
+    margin-top: 10px;
   }
   button:hover, button:focus, button:active {
     /* swap colors */
@@ -148,8 +149,8 @@ nav ul li {
 nav ul li a {
     padding: 0.25em 1em;
     text-decoration: none; /* no underline */
-    background-color: #EBF5FF; /* pale bluish white */
-    color: #4312AE; /* dark blue */
+    background-color: #75ABBC; /* pale bluish white */
+    color: #DFE0E2; /* dark blue */
     border: 2px solid black;
     border-top-left-radius: 1em 1em; /* rounded corner! */
     border-top-right-radius: 1em 1em; /* another rounded corner! */
@@ -159,7 +160,7 @@ nav ul li a {
 nav ul li a:hover, nav ul li a:focus {
         color: black;
         background-color: white;
-        font-weight: bold;
+        
 }
 
 a {
