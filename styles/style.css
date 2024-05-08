@@ -114,6 +114,10 @@ button {
     cursor: pointer; /* displays a hand */
   }
 
+  #clock {
+    color: #EBF5FF;
+  }
+
 /* Table Styles */
 
 table {
