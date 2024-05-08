@@ -101,7 +101,7 @@ div#skip {
 
 button {
     font-size: 1.1em;
-    background-color: #EBF5FF;
+    background-color: #DFE0E2;
     color: #4312AE;
     border: 2px solid black;
     box-shadow: 4px 4px 4px #999999;
@@ -109,13 +109,9 @@ button {
   }
   button:hover, button:focus, button:active {
     /* swap colors */
-    color: #EBF5FF;
+    color: #DFE0E2;
     background-color: #4312AE;
     cursor: pointer; /* displays a hand */
-  }
-
-  #clock {
-    color: #EBF5FF;
   }
 
 /* Table Styles */
@@ -163,7 +159,7 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a:focus {
         color: black;
-        background-color: white;
+        background-color: #DFE0E2;
         
 }
 
