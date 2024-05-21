@@ -10,7 +10,7 @@ Color Scheme
 */
 
 main {
-    clear:left;
+    clear: left;
 }
 
 body {
@@ -18,19 +18,22 @@ body {
     font-size: 1.1em;
     background-color: #284b63;
     width: 70%;
-    margin: 0 auto; /* horizontal center */
+    margin: 0 auto;
+    /* horizontal center */
     border: thick solid black;
     padding: 1em;
     min-width: 720px;
 
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
-    
+
     text-align: center;
     font-size: 1.8em;
     color: #cba135;
@@ -40,7 +43,7 @@ h1 {
 div {
     text-align: left;
     color: #284b63;
-    
+
 }
 
 h2 {
@@ -52,8 +55,8 @@ h2 {
 p {
     color: #dfe0e2;
     margin: 10px;
-  border-style: dashed;
-  border-color: #353535;
+    border-style: dashed;
+    border-color: #353535;
     background-color: #353535;
 }
 
@@ -62,9 +65,9 @@ li {
 }
 
 table {
-  color: #dfe0e2;
-  text-align: center;
-  background-color: #353535;
+    color: #dfe0e2;
+    text-align: center;
+    background-color: #353535;
 }
 
 div#skip {
@@ -72,7 +75,7 @@ div#skip {
     left: 5px;
     position: relative;
     right: 12.5%;
-    }
+}
 
 #info {
     width: 40%;
@@ -106,29 +109,33 @@ button {
     border: 2px solid black;
     box-shadow: 4px 4px 4px #999999;
     margin-top: 10px;
-  }
-  button:hover, button:focus, button:active {
+}
+
+button:hover,
+button:focus,
+button:active {
     /* swap colors */
     color: #DFE0E2;
     background-color: #4312AE;
-    cursor: pointer; /* displays a hand */
-  }
+    cursor: pointer;
+    /* displays a hand */
+}
 
 /* Table Styles */
 
 table {
-  text-align: center;
+    text-align: center;
 }
 
 caption {
-  font-size: 1.6em;
-  color: #cba135;
-  font-weight: bold;
+    font-size: 1.6em;
+    color: #cba135;
+    font-weight: bold;
 }
 
 thead {
-  font-size: 1.2em;
-  
+    font-size: 1.2em;
+
 }
 
 /* Navigation Menu Styles */
@@ -148,19 +155,25 @@ nav ul li {
 
 nav ul li a {
     padding: 0.25em 1em;
-    text-decoration: none; /* no underline */
-    background-color: #75ABBC; /* pale bluish white */
-    color: #DFE0E2; /* dark blue */
+    text-decoration: none;
+    /* no underline */
+    background-color: #75ABBC;
+    /* pale bluish white */
+    color: #DFE0E2;
+    /* dark blue */
     border: 2px solid black;
-    border-top-left-radius: 1em 1em; /* rounded corner! */
-    border-top-right-radius: 1em 1em; /* another rounded corner! */
+    border-top-left-radius: 1em 1em;
+    /* rounded corner! */
+    border-top-right-radius: 1em 1em;
+    /* another rounded corner! */
 }
 
 
-nav ul li a:hover, nav ul li a:focus {
-        color: black;
-        background-color: #DFE0E2;
-        
+nav ul li a:hover,
+nav ul li a:focus {
+    color: black;
+    background-color: #DFE0E2;
+
 }
 
 a {

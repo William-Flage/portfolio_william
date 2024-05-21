@@ -1,123 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Web Portfolio: William Flage's Javascript Page</title>
-		<link type="text/css" rel="stylesheet" href="styles/style.css" media="screen">
-		<link rel="shortcut icon" href="images/171322.png">
-		<style>
-			div#clock {
-			  color: #DFE0E2;
-			  display: none;
 
+<head>
+	<meta charset="utf-8">
+	<title>Web Portfolio: William Flage's Javascript Page</title>
+	<link type="text/css" rel="stylesheet" href="styles/style.css" media="screen">
+	<link rel="shortcut icon" href="images/171322.png">
+	<style>
+		div#clock {
+			color: #DFE0E2;
+			display: none;
+
+		}
+	</style>
+
+	<script>
+		function showAlert() {
+			var myText = "Read this page!";
+			alert(myText);
+		}
+
+		function updateTime() {
+
+			// get all parts of the current time
+			var now = new Date();
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+			var seconds = now.getSeconds();
+
+			// add leading zero's to minutes and seconds
+			if (minutes < 10) {
+				minutes = '0' + minutes;
 			}
-		  </style>
-		
-		<script>
-			 function showAlert() {
-    var myText = "Read this page!";
-    alert (myText);
-  }
+			if (seconds < 10) {
+				seconds = '0' + seconds;
+			}
 
-  function updateTime() {
+			// get time of day (am or pm)
+			if (hours >= 12 && hours < 24) {
+				var timeOfDay = 'pm';
+			}
+			else {
+				var timeOfDay = 'am';
+			}
 
-// get all parts of the current time
-var now = new Date();
-var hours = now.getHours();
-var minutes = now.getMinutes();
-var seconds = now.getSeconds();
+			// convert hours from 24-hour time to 12-hour time
+			if (hours > 12) {
+				hours = hours - 12;
+			}
 
-// add leading zero's to minutes and seconds
-if (minutes < 10) {
-    minutes = '0' + minutes;
-}
-if (seconds < 10) {
-    seconds = '0' + seconds;
-}
+			// splice them together into a character string named "currentTime"
+			var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;
 
-// get time of day (am or pm)
-if (hours >= 12 && hours < 24) {
-    var timeOfDay = 'pm';
-}
-else {
-    var timeOfDay = 'am';
-}
+			// get the clock div
+			var myClock = document.getElementById('clock');
 
-// convert hours from 24-hour time to 12-hour time
-if (hours > 12) {
-    hours = hours - 12;
-}
+			// write the currentTime string to the clock div
+			myClock.innerHTML = currentTime;
+		}
 
-// splice them together into a character string named "currentTime"
-var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;
+		function toggleClock() {
+			// get the clock
+			var myClock = document.getElementById('clock');
 
-// get the clock div
-var myClock = document.getElementById('clock');
+			// get the current value of the clock's display property
+			var displaySetting = myClock.style.display;
 
-// write the currentTime string to the clock div
-myClock.innerHTML = currentTime;
-}
+			// also get the clock button, so we can change what it says
+			var clockButton = document.getElementById('clockButton');
 
-function toggleClock() {
-    // get the clock
-    var myClock = document.getElementById('clock');
+			// now toggle the clock and the button text, depending on current state
+			if (displaySetting == 'block') {
+				// clock is visible. hide it
+				myClock.style.display = 'none';
+				// change button text
+				clockButton.innerHTML = 'Show clock';
+			}
+			else {
+				// clock is hidden. show it
+				myClock.style.display = 'block';
+				// change button text
+				clockButton.innerHTML = 'Hide clock';
+			}
+		}
 
-    // get the current value of the clock's display property
-    var displaySetting = myClock.style.display;
+	</script>
+</head>
 
-    // also get the clock button, so we can change what it says
-    var clockButton = document.getElementById('clockButton');
+<body onload="setInterval('updateTime()',1000)">
+	>
+	<h1>Web Portfolio</h1>
 
-    // now toggle the clock and the button text, depending on current state
-    if (displaySetting == 'block') {
-      // clock is visible. hide it
-      myClock.style.display = 'none';
-      // change button text
-      clockButton.innerHTML = 'Show clock';
-    }
-    else {
-      // clock is hidden. show it
-      myClock.style.display = 'block';
-      // change button text
-      clockButton.innerHTML = 'Hide clock';
-    }
-}
+	<div>
+		<a href="#main">Skip to main content</a>
+	</div>
 
-			</script>
-	</head>
-	<body onload="setInterval('updateTime()',1000)">
-		>
-		<h1>Web Portfolio</h1>
-
-		<div>
-			<a href = "#main">Skip to main content</a>
-		</div>
-
-		<div><ul>
+	<div>
+		<ul>
 			<li>William Flage</li>
-			<li><a href = "mailto:william.flage@a-pcsd.net">william.flage@a-pcsd.net</a></li>
-		</ul></div>
-		<div><ul>
+			<li><a href="mailto:william.flage@a-pcsd.net">william.flage@a-pcsd.net</a></li>
+		</ul>
+	</div>
+	<div>
+		<ul>
 			<li>Web Design Tri 1</li>
 			<li>Ms. Flage</li>
-			<li><a href = "https://www.a-pcsd.net/">Aplington-Parkersburg Highschool</a></li>
+			<li><a href="https://www.a-pcsd.net/">Aplington-Parkersburg Highschool</a></li>
 			<li>2024</li>
-		</ul></div>
-		<nav><ul>
-			<li><a href = "index.html">Home</a></li>
-			<li><a href = "accessibility.html">Accessibility</a></li>
-			<li><a href = "usability.html">Usability</a></li>
-			<li><a href = "graphics.html">Graphics</a></li>
-			<li><a href = "javascript.html">Javascript</a></li>
-			<li><a href = "tools.html">Tools</a></li>
-			<li><a href = "video.html">Video</a></li>
-			<li><a href = "form.html">Forms</a></li>
-		</ul></nav>
+		</ul>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="accessibility.html">Accessibility</a></li>
+			<li><a href="usability.html">Usability</a></li>
+			<li><a href="graphics.html">Graphics</a></li>
+			<li><a href="javascript.html">Javascript</a></li>
+			<li><a href="tools.html">Tools</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="form.html">Forms</a></li>
+		</ul>
+	</nav>
 
-		<main id = "main">
-			<button onclick="showAlert()">Show alert</button>
-			
-			<button onclick="toggleClock()" id="clockButton">Show clock</button>
-			<div id="clock"></div>
-	</body>
+	<main id="main">
+		<button onclick="showAlert()">Show alert</button>
+
+		<button onclick="toggleClock()" id="clockButton">Show clock</button>
+		<div id="clock"></div>
+</body>
+
 </html>
